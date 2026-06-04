@@ -1,7 +1,7 @@
 {
   "name": "wc2026",
   "private": true,
-  "version": "0.0.0",
+  "version": "1.0.0",
   "type": "module",
   "homepage": "https://ssjp8.github.io/wc2026/",
   "scripts": {
@@ -10,11 +10,15 @@
     "lint": "eslint .",
     "preview": "vite preview",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist"
+    "deploy": "gh-pages -d dist",
+    "server": "cd server && npm run dev",
+    "server:start": "cd server && npm start",
+    "server:seed": "cd server && npm run seed"
   },
   "dependencies": {
     "react": "^19.2.6",
-    "react-dom": "^19.2.6"
+    "react-dom": "^19.2.6",
+    "axios": "^1.6.2"
   },
   "devDependencies": {
     "@eslint/js": "^10.0.1",
